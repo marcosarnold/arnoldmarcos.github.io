@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAME's Portfolio</title>
+    <!-- External Library for Styling -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Custom Styling -->
+    <style>
+        #about, #skills, #projects {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        body {
+            background-color: #f4f4f4; /* New background color */
+            color: #333; /* Updated text color for better readability */
+        }
+
+        .card {
+            max-width: 250px;
+            background-color: #fff; /* Slightly different background for cards */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adding a shadow to the cards */
+        }
+
+        #skills .row, #projects .row {
+            align-items: flex-start;
+            justify-content: center;
+            gap: 20px;
+        }
+        .profilepic {
+           width: 250px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- About Section -->
+    <div class="container" id="about">
+        <!-- Title #1 -->
+        <h1>NAME's Portfolio</h1>
+        <!-- Profile Image -->
+        <img class="profilepic" src="profilepic.png" alt="Profile Picture">
+        <br></br>
+        <!-- Intro Text #2 -->
+        <p>I am a passionate software engineer with a love for developing innovative applications.</p>
+    </div>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <!-- Skill Title -->
+            <h2>Skills</h2>
+                <!-- Skill Items -->
+                <div class="row">
+                    <!-- Item #1 -->
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Python</h5>
+                        </div>
+                    </div>
+                    <!-- Item #2 -->
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Java</h5>
+                        </div>
+                    </div>
+                    <!-- Item #3 -->
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">HTML</h5>
+                        </div>
+                    </div>
+                
+                <!-- More skill items can be added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <!-- Projects Title -->
+            <h2>Projects</h2>
+            <div class="row">
+                <!-- Item #1 -->
+                    <div class="card">
+                        <img class="card-img-top" src="project1.png" alt="Project Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Title</h5>
+                            <p class="card-text">Brief project description.</p>
+                            <a href="https://google.com" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                    <!-- Item #2 -->
+                    <div class="card">
+                        <img class="card-img-top" src="project2.png" alt="Project Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Title</h5>
+                            <p class="card-text">Brief project description.</p>
+                            <a href="https://youtube.com" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- More project items can be added here -->
+            </div>
+    </section>
+</body>
+</html>

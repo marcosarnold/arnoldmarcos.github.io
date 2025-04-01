@@ -1,0 +1,22 @@
+HTML Structure:
+
+<!DOCTYPE html>: Declares the document type and version of HTML.
+<html>: Root element of an HTML page.
+<head>: Contains meta-information about the document like <meta charset="UTF-8"> (character encoding), <meta name="viewport"> (responsive web design), and <title> (page title).
+<body>: Contains the content of the HTML document.
+
+
+Common Tags:
+
+<div>: A container element to divide the page into sections.
+<h1>, <h2>, etc.: Header tags, with h1 being the highest level.
+<p>: Paragraph tag.
+<img src="image.png" alt="description">: For images. src is the image path and alt is the alternative text.
+<a href="url">: Anchor tag for hyperlinks.
+
+
+
+Attributes:
+
+class: Used to apply CSS styling to HTML elements.
+id: Unique identifier for an HTML element.
