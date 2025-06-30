@@ -1,1 +1,7 @@
-This is my portfolio: https://marcosarnold.github.io
+##hello!
+
+welcome to my portfolio! https://marcosarnold.github.io
+
+rock and roll,
+--
+marcos
