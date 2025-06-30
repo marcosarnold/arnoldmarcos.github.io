@@ -1,7 +1,6 @@
-##hello!
+# Hello!
 
-welcome to my portfolio! https://marcosarnold.github.io
+Welcome to my portfolio! Check it out here: [https://marcosarnold.github.io](https://marcosarnold.github.io)
 
-rock and roll,
---
-marcos
+Rock and roll,  
+– Marcos
