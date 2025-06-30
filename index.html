@@ -7,40 +7,6 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-    <style>
-            /* Use grid to make 2 columns, 3 rows */
-      .framework-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1.5rem 2rem; /* vertical and horizontal gap */
-      }
-
-      /* Each tech item */
-      .framework-grid article {
-        display: flex;
-        align-items: flex-start; /* so icons align with top of multi-line text */
-        gap: 0.75rem;
-        line-height: 1.3;
-      }
-
-      /* Icon style */
-      .framework-grid .icon {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 1.5rem;
-        margin-top: 0.2rem; /* visually centers icon with text block */
-      }
-
-      /* Header text styling */
-      .framework-grid h3 {
-        font-size: 1rem;
-        font-weight: 600;
-        margin: 0;
-        word-break: break-word;
-      }
-
-    </style>
-    
   </head>
   <body>
     <nav id="desktop-nav">
@@ -48,6 +14,9 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -62,6 +31,9 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#work" onclick="toggleMenu()">Work</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
@@ -77,11 +49,11 @@
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
+            onclick="window.open('./assets/marcosPortfolioResume.pdf')"
           >
             Résumé
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
             Contact Info
           </button>
         </div>
@@ -151,10 +123,240 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#contact'"
+        onclick="location.href='#skills'"
       />
     </section>
-   
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Technical Skills</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="skills-sub-title">Languages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="skills-sub-title">Frameworks & Technologies</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PyTorch</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Django</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Sentiment Analysis</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>REST APIs</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Hugging Face Transformers</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQLite & PostgreSQL</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#work'"
+      />
+    </section>
+    <section id="work" class="timeline-section">
+      <p class="section__text__p1">Trace My</p>
+      <h1 class="title">Work Experience</h1>
+      <div class="timeline">
+        <div class="timeline-item left">
+          <img src="./assets/cc-logo.png" alt="Colorado College Logo" class="company-logo" />
+          <div class="company-date opposite">June 2025 – Present</div>
+          <div class="content">
+            <h3>Web Application Developer Intern</h3>
+            <p class="company-date">Colorado College</p>
+            <ul>
+              <li>Building full-stack web applications with Django and HTMX for the Colorado College Office of Information Technology</li>
+              <li>Designing models and views to support data storage, access, and admin workflows</li>
+              <li>Applying object-oriented design and algorithms to deliver production-ready features</li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="timeline-item right">
+          <img src="./assets/discover-logo.png" alt="Discover Financial Services Logo" class="company-logo" />
+          <div class="company-date opposite">August 2020 – July 2023</div>
+          <div class="content">
+            <h3>Corporate Risk Management (CRM) Intern</h3>
+            <p class="company-date">Discover Financial Services</p>
+            <ul>
+              <li>Supported corporate security operations with real-time research and risk analysis across SIOC, ETIM, and LIFT teams</li>
+              <li>Processed legal requests and ensured proper documentation using Orion and Atlas, supporting compliance and investigations</li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="timeline-item left">
+          <img src="./assets/abbvie-logo.png" alt="Abbvie Logo" class="company-logo" />
+          <div class="company-date opposite">August 2019 – July 2020</div>
+          <div class="content">
+            <h3>Marketing Intern</h3>
+            <p class="company-date">Abbvie</p>
+            <ul>
+              <li>Assisted Marketing Operations with compliance tracking and reporting</li>
+              <li>Reconciled account activity using Insight Farm and SNAPP tools</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#projects'"
+      />
+    </section>    
+    
+    
+      
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/maps.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Cultural Clusters in Music</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/marcosarnold/music-cultural-clusters'">
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/snake.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Snake Game AI</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/marcosarnold/snake-game-ai'">
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
+    </section>
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
@@ -182,7 +384,10 @@
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
