@@ -562,6 +562,13 @@ article .icon {
   height: auto;
   max-height: 90%;
 }
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
 
 /* CONTACT */
 
